@@ -6,6 +6,7 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv'; 
 
 const app = express();
 const PORT = process.env.PORT || 3000;
