@@ -1,0 +1,14 @@
+name: Scheduled Hello World
+
+on:
+  schedule:
+    - cron: '*/2 * * * *'  # Runs every 2 minutes
+  workflow_dispatch:        # Allows manual trigger
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, World! The schedule ran successfully."
