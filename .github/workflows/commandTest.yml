@@ -14,8 +14,7 @@ jobs:
          echo "::endgroup::"
       - name: "step 1"
         run: |
-         MY_VAL=GIVEB >>$GITHUB_ENV
-         
+         echo "MY_VAL=GIVEB " >>$GITHUB_ENV
          
       - name: "step 2"
         run: |
